@@ -1,7 +1,20 @@
 $theme-color: #2080F0FF;
 
+// 卡片
 @mixin base-card($color) {
   border: 2px solid $color;
   box-shadow: 4px 4px $color;
   border-radius: 5px;
+}
+
+// 文字阴影
+@mixin base-text-shadow($color, $content) {
+  &::after {
+    position: absolute;
+    left: -1px;
+    top: -1px;
+    white-space: nowrap;
+    color: $color;
+    content: $content;
+  }
 }

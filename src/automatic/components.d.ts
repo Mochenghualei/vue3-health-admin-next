@@ -7,27 +7,22 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
-    BaseCount: typeof import('./../components/BaseCount.vue')['default']
+    BaseInfoBtn: typeof import('./../components/BaseInfoBtn.vue')['default']
     BaseKPICard: typeof import('./../components/BaseKPICard.vue')['default']
+    BaseSideFooter: typeof import('./../components/BaseSideFooter.vue')['default']
     BaseSocialMedia: typeof import('./../components/BaseSocialMedia.vue')['default']
     BaseThemeSwitchBtn: typeof import('./../components/BaseThemeSwitchBtn.vue')['default']
     BaseWeatherCard: typeof import('./../components/BaseWeatherCard.vue')['default']
-    Components: typeof import('./../components/index.vue')['default']
     ElAside: typeof import('element-plus/es')['ElAside']
     ElButton: typeof import('element-plus/es')['ElButton']
-    ElButtonplain: typeof import('element-plus/es')['ElButtonplain']
     ElCol: typeof import('element-plus/es')['ElCol']
     ElConfigProvider: typeof import('element-plus/es')['ElConfigProvider']
     ElContainer: typeof import('element-plus/es')['ElContainer']
-    ElFooter: typeof import('element-plus/es')['ElFooter']
-    ElIcon: typeof import('element-plus/es')['ElIcon']
     ElMain: typeof import('element-plus/es')['ElMain']
     ElResult: typeof import('element-plus/es')['ElResult']
     ElRow: typeof import('element-plus/es')['ElRow']
     README: typeof import('./../components/README.md')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
-    TheBaseCounter: typeof import('./../components/TheBaseCounter.vue')['default']
-    TheCounter: typeof import('./../components/TheCounter.vue')['default']
   }
 }
